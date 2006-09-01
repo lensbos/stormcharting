@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<root xmlns="urn:StormChart">
+<StormChart>
+	<Configuration>
+		<Type>Pie</Type>
+		<Format>PNG</Format>
+		<ChartBackground type="Color">#FFFFFF</ChartBackground>
+		<Title>Test Pie Chart</Title>
+		<Canvas BackgroundColor='#CCCCCC' BorderThickness='1' BorderColor='#121212'/>
+		<Font color='#AAAAAA' size='12' family='Verdana'/>
+		<NumberFormat>###,###,###</NumberFormat>
+		<Height>480</Height>
+		<Width>640</Width>
+	</Configuration>
+	<Set color='#AAAAAA'>
+		<Container>CensusData</Container>
+		<!-- The Value to use to determine this item's piece of the pie -->
+		<Value>Population</Value>
+		<!-- xml tag to group results by -->
+		<GroupBy>Country</GroupBy> 
+	</Set>
+</StormChart>
+</root>

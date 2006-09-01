@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<DataFile FileName="CensusData.xml">
+<CensusData>
+	<Country>USA</Country>
+	<Population>250000000</Population>
+</CensusData>
+<CensusData>
+	<Country>Canada</Country>
+	<Population>30000000</Population>
+</CensusData>
+<CensusData>
+	<Country>Mexico</Country>
+	<Population>55000000</Population>
+</CensusData>
+</DataFile>

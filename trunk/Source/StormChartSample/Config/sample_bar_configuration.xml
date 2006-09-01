@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="urn:StormChart">
+	<StormChart>
+		<Configuration>
+			<Type>Bar</Type> <!-- Bar/Pie/Line -->
+			<Format>PNG</Format>
+			<Orientation>Horizontal</Orientation>
+			<ChartBackground type="Color">#E8EBEE</ChartBackground> <!-- Chart Background Type, Color/Image, either Hex color code or url to image file -->
+			<Title BackgroundColor='#FFFFDB' Style='Bold' Color='#612D26' Size='7' Font='Verdana'>Sales Report</Title> <!-- Chart Title, to be displayed centered up top, in the canvas, in the designated font -->
+			<Canvas BackgroundColor='#FFFFFF' BorderThickness='1' BorderColor='#121212' /> <!-- Color of area surrounding the chart, ie, where the axis labels are -->
+			<XAxis Color='#612D26' Size='8' Font='Verdana' Label='Date' MarkDrawPeriod='20' ValueDrawPeriod="40"/>
+			<YAxis Color='#612D26' Size='8' Font='Verdana' Label='Volume'/>
+			<Legend BackgroundColor='#FFFFDB' Font='Verdana' Size='7' Color='#612D26'/>
+			<NumberFormat>##,##0</NumberFormat> <!-- The ToString Number Format for any decimal values -->
+			<Grid Color="#FFFFFF" HorizontalDivisionLines="9" />
+			<Height>480</Height> <!-- Pixel Height of the Image -->
+			<Width>640</Width> <!-- Pixel Width of the Image -->
+		</Configuration>
+		<!-- Colors of the Products should be assigned sequentially, ie. first product red, second product blue -->
+		<Set>
+			<Container>Actuals</Container>
+			<!-- Plot the Date on the X Axis -->
+			<XValue>Date</XValue>
+			<!-- Plot the Volume on the Y Axis -->
+			<YValue>Volume</YValue>
+			<!-- Group the Series by the Product field -->
+			<GroupBy>Product</GroupBy>
+		</Set>
+	</StormChart>
+</root>
