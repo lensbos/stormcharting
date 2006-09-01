@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<DataFile FileName="SalesActuals.xml">
+<Actuals>
+	<Date>06/01/2004</Date>
+	<Volume>1000</Volume>
+	<Product>Apples</Product>
+</Actuals>
+<Actuals>
+	<Date>06/01/2004</Date>
+	<Volume>600</Volume>
+	<Product>Oranges</Product>
+</Actuals>
+<Actuals>
+	<Date>06/01/2004</Date>
+	<Volume>1200</Volume>
+	<Product>Pears</Product>
+</Actuals>
+<Actuals>
+	<Date>06/01/2004</Date>
+	<Volume>300</Volume>
+	<Product>Bananas</Product>
+</Actuals>
+<Actuals>
+	<Date>07/01/2004</Date>
+	<Volume>100</Volume>
+	<Product>Apples</Product>
+</Actuals>
+<Actuals>
+	<Date>07/01/2004</Date>
+	<Volume>400</Volume>
+	<Product>Oranges</Product>
+</Actuals>
+<Actuals>
+	<Date>07/01/2004</Date>
+	<Volume>800</Volume>
+	<Product>Pears</Product>
+</Actuals>
+<Actuals>
+	<Date>07/01/2004</Date>
+	<Volume>200</Volume>
+	<Product>Bananas</Product>
+</Actuals>
+<Actuals>
+	<Date>08/01/2004</Date>
+	<Volume>100</Volume>
+	<Product>Apples</Product>
+</Actuals>
+<Actuals>
+	<Date>08/01/2004</Date>
+	<Volume>700</Volume>
+	<Product>Oranges</Product>
+</Actuals>
+<Actuals>
+	<Date>08/01/2004</Date>
+	<Volume>300</Volume>
+	<Product>Pears</Product>
+</Actuals>
+<Actuals>
+	<Date>08/01/2004</Date>
+	<Volume>400</Volume>
+	<Product>Bananas</Product>
+</Actuals>
+</DataFile>
