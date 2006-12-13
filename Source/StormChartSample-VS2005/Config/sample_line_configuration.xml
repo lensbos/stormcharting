@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="urn:StormChart">
+	<StormChart>
+		<Configuration>
+			<Type>Line</Type> <!-- Bar/Pie/Line -->
+			<Format>PNG</Format> <!-- Output Type, JPG/PNG -->
+			<Orientation>Horizontal</Orientation>
+			<ChartBackground type="Color">#E8EBEE</ChartBackground> <!-- Chart Background Type, Color/Image, either Hex color code or url to image file -->
+			<Title BackgroundColor='#FFFFDB' Style='Bold' Color='#612D26' Size='7' Font='Verdana'>Forecasts vs Actuals</Title> <!-- Chart Title, to be displayed centered up top, in the canvas, in the designated font -->
+			<Canvas BackgroundColor='#FFFFFF' BorderThickness='1' BorderColor='#121212' /> <!-- Color of area surrounding the chart, ie, where the axis labels are -->
+			<XAxis Color='#612D26' Size='8' Font='Verdana' Label='Start Dates' MarkDrawPeriod='20' ValueDrawPeriod="40"/>
+			<YAxis Color='#612D26' Size='8' Font='Verdana' Label='Call Volume' MinValue='0' MaxValue='250'/>
+			<Legend BackgroundColor='#FFFFDB' Font='Verdana' Size='7' Color='#612D26'/>
+			<NumberFormat>##,##0.0</NumberFormat> <!-- The ToString Number Format for any decimal values -->
+			<Grid Color="#FFFFFF" HorizontalDivisionLines="9" />
+			<Height>800</Height> <!-- Pixel Height of the Image -->
+			<Width>1524</Width> <!-- Pixel Width of the Image -->
+		</Configuration>
+		<!-- Colors of the Products should be assigned sequentially, ie. first product red, second product blue -->
+		<Set name='Forecast' color='#0000FF' Thickness='1'>
+			<Container>Forecast</Container>
+			<XValue>StartDate</XValue>
+			<YValue>BucketData</YValue>
+		</Set>
+		<Set name='Actuals' color='#FF0000' Thickness='1'>
+			<Container>Actuals</Container>
+			<XValue>StartDate</XValue>
+			<YValue>BucketData</YValue>
+		</Set>
+	</StormChart>
+</root>

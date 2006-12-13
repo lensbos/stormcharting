@@ -1,0 +1,280 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E279748-3D0F-4B1D-8404-10A4B9233DF0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>StormChart</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BC.Controls.StormChart</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BarGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BarVisualizer\BarFoundation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseAxis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseBarGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseBarLegendItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseCaption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseFoundation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseGraphBackground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseGraphBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseLegend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseLegendItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseLineGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BaseLineLegendItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\BasePieLegendItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseVisualizer\Canvas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseXmlReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\BaseObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Converter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DrawHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\MathHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ColorsPoolTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationBrokenException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\GridTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\LegendTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\SetTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\TitleTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\XAxisTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\YAxisTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBrokenException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GraphManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineVisualizer\LineFoundation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineVisualizer\LineGraphBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PieGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\PieDataItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\PieFoundation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\PieGraph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\PieGraphBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\ABuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\ABufferItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Base3DObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Constructor3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\DoesNotCrossException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Line2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Line2DVisualizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Line3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Math3DHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Plane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Point2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Point3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Scene3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Size2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDPieVisualizer\ThreeD\Viewport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValueData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebChartControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="ThreeDPieVisualizer\vssver.scc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
